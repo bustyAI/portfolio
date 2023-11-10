@@ -6,3 +6,12 @@ body {
   background-color: black;
   color: white;
 }
+
+/* Navbar Styles */
+.navbar__text {
+  @apply text-dark-gray sm:text-lg md:text-lg lg:text-3xl
+}
+
+.navbar__menu {
+  
+}
