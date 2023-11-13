@@ -3,9 +3,9 @@ import { Menu } from '.'
 
 const Navbar = () => {
   return (
-    <div className='flex flex-1 w-full flex-row justify-between items-start h-1/6 bg-teal-500'>
-        <p className='navbar__text'>Oscar Ochoa</p>
-        <p className=''><Menu/></p>
+    <div className='navbar'>
+        <p className='navbar__name mx-12 my-12'>Oscar Ochoa</p>
+        <p className='mx-16 my-12'><Menu/></p>
     </div>
   )
 }
