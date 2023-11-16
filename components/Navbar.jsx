@@ -4,11 +4,12 @@ import Link from 'next/link'
 const Navbar = () => {
   return (
     <nav className='navbar'>
-        <p className='navbar__name mx-12 my-12'>Oscar Ochoa</p>
-        <p className='mx-16 my-12'></p>
+        <p className='navbar__name my-4 mx-4'>Oscar Ochoa</p>
+        
 
-        <div className='flex flex-row navbar__text space-x-3 mt-12 mx-12 '>
+        <div className='flex flex-row navbar__text space-x-3 my-4 mx-4'>
           <Link href=''>About</Link>
+          <div className=' border-l border-white'></div>
           <Link href=''>Contact</Link>
           <Link href=''>Github</Link>
 

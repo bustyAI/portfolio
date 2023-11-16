@@ -9,16 +9,12 @@ body {
 
 /* Navbar Styles */
 .navbar {
-  @apply flex flex-1 w-full flex-row justify-between items-start h-1/6 bg-teal-500
+  @apply flex flex-1 w-full flex-row justify-between items-start border rounded-full mt-6
 }
 .navbar__name {
-  @apply text-dark-gray sm:text-lg md:text-lg lg:text-3xl
-}
-
-.navbar__menu {
-  @apply h-12 w-12 
+  @apply text-white sm:text-lg md:text-lg lg:text-xl
 }
 
 .navbar__text {
-  @apply text-dark-gray sm:text-lg md:text-lg lg:text-2xl
+  @apply text-white sm:text-lg md:text-lg lg:text-xl
 }
