@@ -1,12 +1,19 @@
 import React from 'react'
-import { Menu } from '.'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
-    <div className='navbar'>
+    <nav className='navbar'>
         <p className='navbar__name mx-12 my-12'>Oscar Ochoa</p>
-        <p className='mx-16 my-12'><Menu/></p>
-    </div>
+        <p className='mx-16 my-12'></p>
+
+        <div className='flex flex-row navbar__text space-x-3 mt-12 mx-12 '>
+          <Link href=''>About</Link>
+          <Link href=''>Contact</Link>
+          <Link href=''>Github</Link>
+
+        </div>
+    </nav>
   )
 }
 

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Headshot, Navbar } from '@/components'
+import Link from 'next/link'
 
 export default function Home() {
   return (

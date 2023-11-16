@@ -19,10 +19,6 @@ body {
   @apply h-12 w-12 
 }
 
-.navbar__menu_icon {
-  @apply outline-none absolute right-0 top-0 transition-all duration-300 ease-in-out
-}
-
 .navbar__text {
   @apply text-dark-gray sm:text-lg md:text-lg lg:text-2xl
 }
