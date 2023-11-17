@@ -12,9 +12,23 @@ body {
   @apply flex flex-1 w-full flex-row justify-between items-start border rounded-full mt-6
 }
 .navbar__name {
-  @apply text-white sm:text-lg md:text-lg lg:text-xl
+  @apply text-neon-pink sm:text-lg md:text-lg lg:text-xl
 }
 
 .navbar__text {
   @apply text-white sm:text-lg md:text-lg lg:text-xl
+}
+
+
+/*Box Frame Styles */
+.blue__frame {
+  @apply border-4 rounded-lg h-96 w-96 absolute right-28 shadow-neon-green-frame border-neon-blue
+}
+
+.red__frame {
+  @apply border-4 rounded-lg h-96 w-96 absolute right-3 top-3 shadow-neon-blue-frame  border-neon-red
+}
+
+.green__frame {
+  @apply border-4 rounded-lg h-96 w-96 absolute right-3 top-3 shadow-neon-red-frame border-neon-green
 }

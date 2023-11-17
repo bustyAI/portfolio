@@ -13,12 +13,23 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'dark-gray': '#212121',
+        'dark-gray': '#5e5e5e',
         'neon-red': '#FF3131',
         'neon-green': '#00FF00',
         'neon-blue': '#00FFFF',
-        'neon-purple': '#9D00FF'
+        'neon-purple': '#9D00FF',
+        'neon-pink': '#FF0099'
 
+      },
+      boxShadow: {
+        'neon-red-frame': '0px 0px 20px 0px #FF3131',
+        'neon-blue-frame': '0px 0px 20px 0px #00FFFF',
+        'neon-green-frame': '0px 0px 20px 0px #00FF00',
+
+        'neon-red-bar': '0px 0px 6px 0px #FF3131',
+        'neon-blue-bar': '0px 0px 6px 0px #00FFFF',
+
+        'neon-pink-name': '0px 0px 20px 0px #FF0099'
       }
     },
   },
