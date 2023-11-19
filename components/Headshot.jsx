@@ -8,7 +8,7 @@ const Headshot = () => {
   const [visibleIndex, setVisibleIndex] = useState(0);
 
   useEffect(() => {
-    const totalDuration = 1200 * words.length;
+    const totalDuration = 500 * words.length;
     let timer;
 
     const updateVisibility = () => {
@@ -22,17 +22,19 @@ const Headshot = () => {
   }, [words]);
 
   return (
-    <div className='blue__frame'>
-      <div className='red__frame'>
-        <div className={`green__frame text-center flex flex-col`}>
-          {words.map((word, index) => (
-            <p
-              key={index}
-              className={`${index === visibleIndex ? 'animate-appear' : 'animate-disappear'}`}
-            >
-              {word}
-            </p>
-          ))}
+    <div className='box__frame_container'>
+      <div className='blue__frame'>
+        <div className='red__frame'>
+          <div className={`green__frame text-center flex flex-col `}>
+            {words.map((word, index) => (
+              <p
+                key={index}
+                className={`neon__text my-8  text-xl ${index === visibleIndex ? 'animate-appear' : 'animate-disappear'}`}
+              >
+                {word}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
     </div>

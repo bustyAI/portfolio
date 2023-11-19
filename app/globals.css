@@ -6,17 +6,23 @@ body {
   background-color: black;
   color: white;
 }
+/* Text Styles */
+
+.regular__text {
+  text-shadow: 1px 1px 2px #FF0099, 0 0 1em #FF0099, 0 0 0.2em #FF0099;
+}
 
 /* Navbar Styles */
 .navbar {
-  @apply flex flex-1 w-full flex-row justify-between items-start border rounded-full mt-6
+  @apply flex flex-1 w-full flex-row justify-between items-start  mt-6
 }
 .navbar__name {
   @apply text-neon-pink sm:text-lg md:text-lg lg:text-xl
 }
 
-.navbar__text {
-  @apply text-white sm:text-lg md:text-lg lg:text-xl
+.neon__text {
+  text-shadow: 1px 1px 2px #FF0099, 0 0 1em #FF0099, 0 0 0.2em #FF0099;
+  color: #FF0099;
 }
 
 .navbar__name {
@@ -28,16 +34,20 @@ body {
 /* END */
 
 /*Box Frame Styles */
+.box__frame_container {
+  @apply flex flex-1 w-full h-96 justify-end items-end right-64 absolute
+}
+
 .blue__frame {
-  @apply border-4 rounded-lg h-96 w-96 absolute right-28 shadow-neon-blue-frame border-neon-blue
+  @apply border-4 rounded-lg h-96 w-96 relative right-8 top-4 shadow-neon-blue-frame border-neon-blue
 }
 
 .red__frame {
-  @apply border-4 rounded-lg h-96 w-96 absolute right-3 top-3 shadow-neon-red-frame  border-neon-red
+  @apply border-4 rounded-lg h-96 w-96 relative right-4 top-2 shadow-neon-red-frame  border-neon-red
 }
 
 .green__frame {
-  @apply border-4 rounded-lg h-96 w-96 absolute right-3 top-3 shadow-neon-green-frame border-neon-green
+  @apply border-4 rounded-lg h-96 w-96 relative right-4 top-2 shadow-neon-green-frame border-neon-green
 }
 
 /* END */

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Border = ({ color, shadow }) => {
+const Border = ({ type, color, shadow }) => {
   return (
-    <div className={`border-l border-2 ${shadow} rounded-full ${color}`}></div>
+    <div className={`${type} border-2 ${shadow} rounded-full ${color}`}></div>
   )
 }
 

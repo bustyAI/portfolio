@@ -18,8 +18,9 @@ module.exports = {
         'neon-green': '#00FF00',
         'neon-blue': '#00FFFF',
         'neon-purple': '#9D00FF',
-        'neon-pink': '#FF0099'
+        'neon-pink': '#FF0099',
 
+        'muted-blue': '#3A6F9E'
       },
       boxShadow: {
         'neon-red-frame': '0px 0px 20px 0px #FF3131',
@@ -28,6 +29,7 @@ module.exports = {
 
         'neon-red-bar': '0px 0px 6px 0px #FF3131',
         'neon-blue-bar': '0px 0px 6px 0px #00FFFF',
+        'neon-green-bar': '0px 0px 6px 0px #00FF00',
 
         'neon-pink-name': '0px 0px 20px 0px #FF0099'
       }
