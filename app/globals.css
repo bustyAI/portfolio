@@ -19,16 +19,61 @@ body {
   @apply text-white sm:text-lg md:text-lg lg:text-xl
 }
 
+.navbar__name {
+  text-shadow: 1px 1px 2px #FF0099, 0 0 1em #FF0099, 0 0 0.2em #FF0099;
+  color: #FF0099;
+
+}
+
+/* END */
 
 /*Box Frame Styles */
 .blue__frame {
-  @apply border-4 rounded-lg h-96 w-96 absolute right-28 shadow-neon-green-frame border-neon-blue
+  @apply border-4 rounded-lg h-96 w-96 absolute right-28 shadow-neon-blue-frame border-neon-blue
 }
 
 .red__frame {
-  @apply border-4 rounded-lg h-96 w-96 absolute right-3 top-3 shadow-neon-blue-frame  border-neon-red
+  @apply border-4 rounded-lg h-96 w-96 absolute right-3 top-3 shadow-neon-red-frame  border-neon-red
 }
 
 .green__frame {
-  @apply border-4 rounded-lg h-96 w-96 absolute right-3 top-3 shadow-neon-red-frame border-neon-green
+  @apply border-4 rounded-lg h-96 w-96 absolute right-3 top-3 shadow-neon-green-frame border-neon-green
 }
+
+/* END */
+
+/* Box Text Animations */
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-0.5em);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.animate-appear {
+  display: inline-block;
+  animation: appear 0.5s ease-in-out forwards;
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-0.5em);
+  }
+}
+
+.animate-disappear {
+  display: inline-block;
+  animation: disappear 0.5s ease-in-out forwards;
+}
+/* END */

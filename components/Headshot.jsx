@@ -1,16 +1,42 @@
+"use client"
 import React from 'react'
+import { useState, useEffect } from 'react'
+
 
 const Headshot = () => {
+  const words = ["Hello there", "My name is Oscar Ochoa", "I enjoy creating websites (:"];
+  const [visibleIndex, setVisibleIndex] = useState(0);
+
+  useEffect(() => {
+    const totalDuration = 1200 * words.length;
+    let timer;
+
+    const updateVisibility = () => {
+      setVisibleIndex((prev) => (prev + 1) % words.length);
+      timer = setTimeout(updateVisibility, 1000);
+    };
+
+    timer = setTimeout(updateVisibility, totalDuration);
+
+    return () => clearTimeout(timer);
+  }, [words]);
+
   return (
     <div className='blue__frame'>
       <div className='red__frame'>
-        <div className='green__frame'>
-
+        <div className={`green__frame text-center flex flex-col`}>
+          {words.map((word, index) => (
+            <p
+              key={index}
+              className={`${index === visibleIndex ? 'animate-appear' : 'animate-disappear'}`}
+            >
+              {word}
+            </p>
+          ))}
         </div>
-
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Headshot
+export default Headshot;
