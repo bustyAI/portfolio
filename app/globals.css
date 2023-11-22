@@ -12,6 +12,28 @@ body {
   text-shadow: 1px 1px 2px #FF0099, 0 0 1em #FF0099, 0 0 0.2em #FF0099;
 }
 
+.neon__text {
+  text-shadow: 1px 1px 2px #FF0099, 0 0 1em #FF0099, 0 0 0.2em #FF0099;
+  color: #FF0099;
+}
+
+.neon__text_green {
+  text-shadow: 1px 1px 2px #00FF00, 0 0 1em #00FF00, 0 0 0.2em #00FF00;
+  color: #00FF00;
+}
+
+.neon__text_red {
+  text-shadow: 1px 1px 2px #FF3131, 0 0 1em #FF3131, 0 0 0.2em #FF3131;
+  color: #FF3131;
+}
+
+.neon__text_white {
+  text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
+  color: white;
+}
+
+/* END */
+
 /* Navbar Styles */
 .navbar {
   @apply flex flex-1 w-full flex-row justify-between items-start  mt-6
@@ -20,10 +42,7 @@ body {
   @apply text-neon-pink sm:text-lg md:text-lg lg:text-xl
 }
 
-.neon__text {
-  text-shadow: 1px 1px 2px #FF0099, 0 0 1em #FF0099, 0 0 0.2em #FF0099;
-  color: #FF0099;
-}
+
 
 .navbar__name {
   text-shadow: 1px 1px 2px #FF0099, 0 0 1em #FF0099, 0 0 0.2em #FF0099;
@@ -85,5 +104,114 @@ body {
 .animate-disappear {
   display: inline-block;
   animation: disappear 0.5s ease-in-out forwards;
+}
+
+/* Flickering Animation */
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: 1;
+  }
+
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.8;
+  }
+
+  23%, 61.999%, 65.999%, 69% {
+    opacity: 0.6;
+  }
+
+  70.999%, 72%, 100% {
+    opacity: 0.3;
+  }
+
+  73%, 97.999%, 99.999% {
+    opacity: 0.1;
+  }
+}
+
+.flicker {
+  animation: flicker 5s infinite;
+  animation-delay: 8s;
+}
+
+@keyframes flicker2 {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: 1;
+  }
+
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.8;
+  }
+
+  23%, 61.999%, 65.999%, 69% {
+    opacity: 0.6;
+  }
+
+  70.999%, 72%, 100% {
+    opacity: 0.3;
+  }
+
+  73%, 97.999%, 99.999% {
+    opacity: 0.1;
+  }
+}
+
+.flicker2 {
+  animation: flicker 3s infinite;
+  animation-delay: 7s;
+}
+
+@keyframes flicker3 {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: 1;
+  }
+
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.8;
+  }
+
+  23%, 61.999%, 65.999%, 69% {
+    opacity: 0.6;
+  }
+
+  70.999%, 72%, 100% {
+    opacity: 0.3;
+  }
+
+  73%, 97.999%, 99.999% {
+    opacity: 0.1;
+  }
+}
+
+.flicker3 {
+  animation: flicker 6s infinite;
+  animation-delay: 6s;
+}
+
+@keyframes flicker4 {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: 1;
+  }
+
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.8;
+  }
+
+  23%, 61.999%, 65.999%, 69% {
+    opacity: 0.6;
+  }
+
+  70.999%, 72%, 100% {
+    opacity: 0.3;
+  }
+
+  73%, 97.999%, 99.999% {
+    opacity: 0.1;
+  }
+}
+
+.flicker4 {
+  animation: flicker 10s infinite;
+  animation-delay: 3s;
 }
 /* END */
