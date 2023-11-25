@@ -2,7 +2,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 
-
 const Headshot = () => {
   const words = ["Hello there", "My name is Oscar Ochoa", "I enjoy creating websites (:"];
   const [visibleIndex, setVisibleIndex] = useState(0);
@@ -29,7 +28,7 @@ const Headshot = () => {
             {words.map((word, index) => (
               <p
                 key={index}
-                className={`neon__text my-8  text-xl ${index === visibleIndex ? 'animate-appear' : 'animate-disappear'}`}
+                className={`neon__text my-5 text-5xl ${index === visibleIndex ? 'animate-appear' : 'animate-disappear'}`}
               >
                 {word}
               </p>
