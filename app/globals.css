@@ -33,8 +33,13 @@ body {
   color: white;
 }
 
+.contact__name {
+  text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
+  color: white;
+}
+
 .card__title {
-  @apply neon__text_white text-lg mx-4 text-center
+  @apply neon__text_white text-3xl mx-4 text-center
 }
 
 .card__desc {
@@ -62,14 +67,14 @@ body {
 }
 
 .navbar__contact{
-  @apply flex flex-row  space-x-3 mt-4 mx-4
+  @apply flex flex-row space-x-3 mt-4 mx-4 text-3xl
 }
 
 /* END */
 
 /*Box Frame Styles */
 .box__frame_container {
-  @apply flex left-1/2 -translate-x-1/2 w-4/5 my-8 h-96 absolute
+  @apply flex left-1/2 -translate-x-1/2 w-3/4 my-8 h-96 absolute
 }
 
 .blue__frame {
@@ -100,7 +105,7 @@ body {
 
 /* Box Text Animations */
 
-@keyframes appear {
+/* @keyframes appear {
   from {
     opacity: 0;
     transform: translateX(-0.5em);
@@ -126,12 +131,12 @@ body {
     opacity: 0;
     transform: translateX(-0.5em);
   }
-}
+} */
 
-.animate-disappear {
+/* .animate-disappear {
   display: inline-block;
   animation: disappear 0.5s ease-in-out forwards;
-}
+} */
 
 /* Flickering Animation */
 @keyframes flicker {
@@ -242,4 +247,120 @@ body {
   animation-delay: 3s;
 }
 
+
 /* END */
+
+/* Bar Animation */
+.light-animation {
+  position: absolute;
+  opacity: 100;
+  bottom: 2rem;
+  width: 20px; 
+  height: 4px; 
+  background-color: #00FFFF; 
+  background: radial-gradient(circle, #00aaff 80%, transparent 60%); 
+  border-radius: 2px; 
+  box-shadow: 0 0 10px #00FFFF; 
+  animation: runLight 6s linear infinite;
+}
+
+@keyframes runLight {
+  0%, 100% {
+    left: 0px; 
+  }
+  50% {
+    left: 95%; 
+  }
+
+}
+
+/* Pacman animation */
+
+.pacman_animation {
+  position: relative;
+  opacity: 100;
+  color: yellow;
+  animation: runPac 7s linear infinite alternate, rotateAndFlip 2s linear infinite alternate
+}
+
+@keyframes runPac {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 50px);
+  }
+}
+
+@keyframes rotateAndFlip {
+  0%, 100% {
+    transform: rotate(0deg) scaleX(1) translateY(50px)
+
+  }
+  50% {
+    transform: rotate(360deg) scaleX(-1);
+    background-color: black;
+  }
+}
+
+.pacman_animation2 {
+  position: relative;
+  opacity: 100;
+  color: yellow;
+  animation: runPac2 4s linear infinite alternate, rotateAndFlip2 2s linear infinite alternate
+}
+
+
+@keyframes runPac2 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 50px);
+  }
+}
+
+@keyframes rotateAndFlip2 {
+  0%, 100% {
+    transform: rotate(0deg) scaleX(1) translateY(30px)
+    
+  }
+  50% {
+    transform: rotate(255deg) scaleX(-1);
+    background-color: black;
+  }
+}
+
+
+.pacman_animation3 {
+  position: relative;
+  opacity: 100;
+  color: yellow;
+  animation: runPac3 6s linear infinite alternate, rotateAndFlip3 3s linear infinite alternate
+}
+
+
+@keyframes runPac3 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 50px);
+  }
+}
+
+@keyframes rotateAndFlip3 {
+  0%, 100% {
+    transform: rotate(0deg) scaleX(1) translateY(60px)
+    
+  }
+  50% {
+    transform: rotate(180deg) scaleX(-1);
+    background-color: black;
+  }
+}
+
+/* END */
+
+
+

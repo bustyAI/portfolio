@@ -34,6 +34,7 @@ module.exports = {
         'neon-green-bar': '0px 0px 6px 0px #00FF00',
 
         'neon-pink-name': '0px 0px 20px 0px #FF0099',
+        'neon-green-name': '0px 0px 20px 0px #00FF00',
 
         'neon-blue-flicker': '0px 0px 10px 0px #00FFFF'
       }
